@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Счетчик чаевых</string>
+    <string name="good_18">Отлично (18%)</string>
+    <string name="amazing_20">Потрясающе (20%)</string>
+    <string name="how_was_the_service">Как вам обслуживание?</string>
+    <string name="cost_of_service">Цена услуги</string>
+    <string name="okay_15">Хорошо (15%)</string>
+    <string name="calculate">Подсчитать</string>
+    <string name="tip_amount">Размер чаевых: %s</string>
+    <string name="round_up_tip">Округлять чаевые?</string>
+</resources>
