@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <by.sergey.customview.EmotionalFace
+        android:id="@+id/userEmotionalFace"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:layout_margin="50dp"
+        app:borderWidth="10dp"
+        app:faceColor="#FFD600"
+        app:layout_constraintBottom_toTopOf="@id/seriousEmotionalFace"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.48000002" />
+
+    <by.sergey.customview.EmotionalFace
+        android:id="@+id/happyEmotionalFace"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_margin="25dp"
+        app:borderWidth="10dp"
+        app:faceColor="#4CAF50"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:state="happy" />
+
+    <by.sergey.customview.EmotionalFace
+        android:id="@+id/seriousEmotionalFace"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_margin="25dp"
+        app:borderWidth="10dp"
+        app:faceColor="#3F51B5"
+        app:layout_constraintEnd_toStartOf="@+id/sadEmotionalFace"
+        app:layout_constraintStart_toEndOf="@+id/happyEmotionalFace"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintVertical_bias="1.0"
+        app:state="serious" />
+
+    <by.sergey.customview.EmotionalFace
+        android:id="@+id/sadEmotionalFace"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_margin="25dp"
+        app:borderWidth="10dp"
+        app:faceColor="#F44336"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:state="sad" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
