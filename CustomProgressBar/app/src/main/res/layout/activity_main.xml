@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <com.example.customprogressbar.VerticalProgressBar
+        android:id="@+id/verticalProgressBar"
+        android:layout_margin="25dp"
+        android:layout_width="100dp"
+        android:layout_height="200dp"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"/>
+
+    <Button
+        android:id="@+id/btCalculate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Calculate"
+        android:layout_marginTop="50dp"
+        android:layout_marginStart="150dp"
+        app:layout_constraintTop_toBottomOf="@id/etMax"
+        app:layout_constraintStart_toStartOf="parent"/>
+
+    <EditText
+        android:id="@+id/etMin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="Min"
+        android:layout_marginStart="25dp"
+        android:layout_marginTop="50dp"
+        app:layout_constraintTop_toBottomOf="@id/verticalProgressBar"
+        app:layout_constraintStart_toStartOf="parent"/>
+
+    <EditText
+        android:id="@+id/etMax"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="Max"
+        android:layout_marginTop="50dp"
+        android:layout_marginStart="100dp"
+        app:layout_constraintTop_toBottomOf="@id/verticalProgressBar"
+        app:layout_constraintStart_toEndOf="@id/etMin"/>
+
+    <EditText
+        android:id="@+id/etCurrent"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="100dp"
+        android:layout_marginTop="50dp"
+        android:hint="Current"
+        app:layout_constraintTop_toBottomOf="@id/verticalProgressBar"
+        app:layout_constraintStart_toEndOf="@id/etMax"/>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
